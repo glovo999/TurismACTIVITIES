@@ -38,12 +38,12 @@ h1 {
 .btn-type {
 
     text-decoration: none;
-    background-color: rgb(180, 142, 99);
+    background-image: url(imagenes/hojas.jpg);
     color: white;
     margin: 20px;
     padding: 10px;
     border-radius: 7px;
-    border: 2px solid black;
+    border: 2px solid rgb(39, 105, 8);
     font-size: 2em;
 
 }
