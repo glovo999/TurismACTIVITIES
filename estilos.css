@@ -40,7 +40,7 @@ h1 {
     text-decoration: none;
     background-image: url(imagenes/hojas.jpg);
     color: white;
-    margin: 20px;
+    margin: 100px;
     padding: 10px;
     border-radius: 7px;
     border: 2px solid rgb(39, 105, 8);
@@ -108,7 +108,7 @@ ul li {
 }
 
 .actividades {
-    margin-top: 180px;
+    margin-top: 50px;
 }
 
 .background {
@@ -121,6 +121,10 @@ ul li {
     font-size: 2em;
     color: blue;
 
+}
+
+main {
+    margin-top: 200px;
 }
 
 
@@ -165,6 +169,7 @@ ul li {
 
     h1 {
         font-size: 150%;
+        margin-top: 100px;
     }
 
 
@@ -189,7 +194,7 @@ ul li {
         text-decoration: none;
         background-image: url(imagenes/hojas.jpg);
         color: white;
-        margin: 10px;
+        margin: 90px;
         padding: 5px;
         border-radius: 3px;
         border: 2px solid rgb(39, 105, 8);
@@ -202,8 +207,11 @@ ul li {
     }
 
     .actividades {
-        margin-top: 20%;
+        margin-top: 100px;
+        margin-bottom: 50px;
     }
+
+
 
 
 }
