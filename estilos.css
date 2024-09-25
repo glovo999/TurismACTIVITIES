@@ -169,7 +169,7 @@ main {
 
     h1 {
         font-size: 150%;
-        margin-top: 100px;
+        margin-top: 10px;
     }
 
 
@@ -207,11 +207,13 @@ main {
     }
 
     .actividades {
-        margin-top: 100px;
+        margin-top: 20px;
         margin-bottom: 50px;
     }
 
 
-
+    main {
+        margin-top: 100px;
+    }
 
 }
