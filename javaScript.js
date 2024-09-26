@@ -6,7 +6,7 @@ const actividades = [
         "Ubicación": "Cascada Escondida vía Mirador El Peñal./ Cerro de la Virgen.",
         "descripción": "(Prestamos vestimenta se pide llevar calzado necesario)",
         "Edad": "Mayores de 15 años",
-        "Precio": "$10.000",
+        "Precio": "$25.000",
         "Horarios": "",
 
     },
@@ -18,7 +18,7 @@ const actividades = [
         "Ubicación": "Cascada los hornillos",
         "descripción": "(Prestamos vestimenta se pide llevar calzado necesario y agua para hidratarse)",
         "Edad": "Mayores de 15 años",
-        "Precio": "$10.000",
+        "Precio": "$5.000",
         "Horarios": "",
 
 
@@ -31,7 +31,7 @@ const actividades = [
         "Ubicación": "Río Grande, Rio Minaclavero",
         "descripción": "(Prestamos Vestimenta, no es necesario experiencia)",
         "Edad": "Mayores de 15 años",
-        "Precio": "$20.000",
+        "Precio": "$30.000",
         "Horarios": "",
     },
 
@@ -42,7 +42,7 @@ const actividades = [
         "Ubicación": "Villa Carlos Paz",
         "descripción": "( no es necesario experiencia )",
         "Edad": "Mayores de 10 años",
-        "Precio": "$10.000",
+        "Precio": "$15.000",
         "Horarios": "9:30 a 12:30 y de 2:30 a 7:30",
     },
 
@@ -53,7 +53,7 @@ const actividades = [
         "Ubicación": "Villa Carlos Paz",
         "descripción": "( no es necesario experiencia se brindara instrucciones en el lugar)",
         "Edad": "Mayores de 17 años",
-        "Precio": "$10.000",
+        "Precio": "$22.000",
         "Horarios": "",
     },
 
@@ -92,4 +92,12 @@ function mostraractividades(listactividades = actividades) {
     })
 
     document.querySelector(".actividades").innerHTML = tarjetasHTML;
+
+}
+
+function filtraractividad(busq) {
+    const listafiltrada = actividades.filter((actividad) => {
+        return (actividad.nombre.includes(busq) || actividad.Edad.includes(busq) || actividad.Ubicación.includes(busq) || actividad.Precio.includes(busq) || actividad.descripción.includes(busq))
+    })
+    mostraractividades(listafiltrada)
 }
